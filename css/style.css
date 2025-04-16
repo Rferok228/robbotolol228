@@ -273,9 +273,10 @@ body::-webkit-scrollbar-thumb {
 
 #second-part {
     width: 1350px;
-    height: 880px;
     color: #ffffff;
     margin-top: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 #second-part-icon {
@@ -306,6 +307,7 @@ body::-webkit-scrollbar-thumb {
     align-items: end;
     margin-top: 50px;
     position: relative;
+    
 }
 
 #second-part-block-images1 {
@@ -391,7 +393,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #second-part-text {
-    height: 182px;
+
+    max-width: 1350px;
+    min-width: 360px;
 }
 
 #third-part {
@@ -1551,5 +1555,52 @@ footer {
     }
     #present-copmpany-link {
         margin-top: 10px;
+    }
+    #second-part {
+        width: 360px;
+        display: flex;
+        margin: 20px auto 0 auto;
+    }
+    #second-part-icon {
+        width: 26px;
+        height: 26px;
+    }
+    #second-part-text-42px {
+        font-size: 16px;
+    }
+    #second-part-text-16px {
+        font-size: 8px;
+    }
+    #second-part-blockimsges {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 260px;
+        margin-top: 20px;
+    }
+    #second-part-block2, #second-part-block-images2 {
+        order: -2;
+        width: 209px;
+        height: 258px;
+    }
+    #second-part-block1, #second-part-block-images1 {
+
+        width: 136px;
+        height: 136px;
+    }
+    #second-part-block3, #second-part-block-images3 {
+        width: 136px;
+        height: 114px;
+    }
+    .part2-images-miniblock-text {
+        font-size: 6px;
+        bottom: 13px;
+    }
+    .part2-images-miniblock {
+        height: 40px;
+        width: 40px;
+    }
+    #second-part-block2 .part2-images-miniblock:first-of-type {
+        height: 60px;
+        width: 60px;
     }
 }
