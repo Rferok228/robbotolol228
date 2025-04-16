@@ -1491,12 +1491,12 @@ footer {
 }
 
 @media (max-width: 390px) {
-    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text {
+    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1  {
         display: none;
     }
     #logotype {
         font-size: 16px;
-        margin-left: 10px;
+        margin-left: 16px;
     }   
     #header {
         margin-top: 0;
@@ -1504,13 +1504,13 @@ footer {
 
     .present-copmpany-text-s62 {
         font-size: 20px;
-        line-height: 20px;
+        line-height: 30px;
     }
     #present-copmpany-images {
         width: 135px;
         height: 160px;
     }
-    #robboto {
+    #robboto, #decoration1, #grid {
         width: 135px;
         height: 160px;
     }
@@ -1518,6 +1518,38 @@ footer {
         margin-top: 0;
     }
     #present-copmpany {
-        margin-top: 20px;
+        width: 360px;
+        display: flex;
+        margin: 20px auto 0 auto;
+    }
+    #grid, #decoration1 {
+        top: 0;
+        left: -18px;
+    }
+    #blockinblock {
+        width: 23px;
+        height: 23px;
+        bottom: -10px;
+        left: 16px;
+    }
+    #blockinblock div {
+        width: 16px;
+        height: 16px;
+    }
+    #blockinblock div img{
+        width: 8px;
+        height: 8px;
+    }
+    #present-copmpany-block {
+    width: 108px;
+    height: 29px;
+    background-color: rgba(138, 53, 242, 1);
+    clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
+    }
+    #present-copmpany-link-text {
+        font-size: 8px;
+    }
+    #present-copmpany-link {
+        margin-top: 10px;
     }
 }
