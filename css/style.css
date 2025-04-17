@@ -399,7 +399,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #third-part {
-    height: 800px;
     width: 1350px;
     margin-top: 120px;
     color: #ffffff;
@@ -496,13 +495,15 @@ body::-webkit-scrollbar-thumb {
 #conteiner2 { 
     display: flex;
     margin: 0 auto;
-    width: 1820px;
+    max-width: 1820px;
     height: 676px;
     margin-top: 120px;
     background-image: url(../images/robot-hand-finger-ai-background-technology-graphics\ 1.png);
     clip-path: polygon(0% 0%, 91% 0%, 100% 25%, 100% 100%, 9% 100%, 0% 80%);
     align-items: center;
     position: relative;
+    min-width: 390px;
+
 }
 
 #conteiner2-text {
@@ -534,13 +535,14 @@ body::-webkit-scrollbar-thumb {
 
 #conteiner2-link {
     display: flex;
-    width: 200px;
+    max-width: 200px;
     height: 63px;
     align-items: center;
     font-family: Orbitron;
     margin-top: 25px;
     margin: 0 auto;
     margin-top: 21px;
+    min-width: 75px;
 }
 
 #vector5 {
@@ -564,8 +566,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #conteiner3 {
-    width: 1350px;
+    max-width: 1350px;
     margin: auto;
+    min-width: 390px;
 }
 
 #four-part {
@@ -1376,6 +1379,7 @@ footer {
     top: 0;
     left: -515px;
     position: absolute;
+    z-index: -10;
 }
 
 #polygon {
@@ -1495,7 +1499,8 @@ footer {
 }
 
 @media (max-width: 390px) {
-    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3, #third-part-images, #vector4  {
+    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3, #third-part-images, #vector4, #vector5,
+    #polygon, #vector2, #vector6 {
         display: none;
     }
     #logotype {
@@ -1544,43 +1549,43 @@ footer {
         width: 8px;
         height: 8px;
     }
-    #present-copmpany-block, #second-part-link-block, #third-part-link-block {
-    width: 96px;
-    height: 29px;
-    background-color: rgba(138, 53, 242, 1);
-    clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
+    #present-copmpany-block, #second-part-link-block, #third-part-link-block, #conteiner2-link-block, #four-part-link-block {
+        width: 96px;
+        height: 29px;
+        background-color: rgba(138, 53, 242, 1);
+        clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
     }
     #present-copmpany-block {
         width: 108px;
     }
-    #present-copmpany-link-text, #second-part-link-text, #third-part-link-text {
+    #present-copmpany-link-text, #second-part-link-text, #third-part-link-text, #conteiner2-link-text, #present-copmpany-images-div-text-link-block-text, #four-part-link-text {
         font-size: 8px;
 
     }
-    #present-copmpany-link, #second-part-link, #third-part-link{
+    #present-copmpany-link, #second-part-link, #third-part-link, #conteiner2-link, #four-part-link{
         width: auto;
         padding: 0;
         display: flex;
         margin: 10px auto 0 auto;
 
     }
-    #second-part, #third-part {
+    #second-part, #third-part, #four-part {
         width: 360px;
         display: flex;
         margin: 30px auto 0 auto;
     }
-    #second-part-icon, #icon3 {
+    #second-part-icon, #icon3, #four-part-icon {
         width: 26px;
         height: 26px;
         display: flex;
         margin: 0 auto 0 auto;
     }
-    #second-part-text-42px, #third-part-text42px {
+    #second-part-text-42px, #third-part-text42px, #four-part-text-42px {
         font-size: 16px;
         text-align: center;
         margin-top: 10px;
     }
-    #second-part-text-16px {
+    #second-part-text-16px, #conteiner2-text16px, #four-part-text-16px {
         font-size: 8px;
     }
     #second-part-blockimsges {
@@ -1591,11 +1596,11 @@ footer {
     }
     #second-part-block2, #second-part-block-images2 {
         order: -2;
-        width: 209px;
+        width: 213px;
         height: 260px;
+        margin-right: 10px;
     }
     #second-part-block1, #second-part-block-images1 {
-
         width: 136px;
         height: 136px;
     }
@@ -1617,8 +1622,88 @@ footer {
     }
     .third-part-text {
         text-align: justify;
+        font-size: 14px;
     }
     #third-part-link {
         width: 75px;
+    }
+    #conteiner2-text {
+        width: 360px;
+    }
+    #conteiner2-text52px {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    #conteiner2-text16px {
+        width: 360px;
+    }
+    #conteiner2-text, #conteiner2 {
+        height: 144px;
+    }
+    #conteiner2-link {
+        margin-left: 140px;
+        height: 50px;
+        margin-top: 0;
+    }
+    #conteiner2-link-text {
+        margin-left: 13px;
+    }
+    #conteiner2 {
+        margin-top: 40px;
+    }
+    .four-part-block, .four-part-block2-img-text {
+        width: 172px;
+        height: 227px;
+        
+    }
+    .four-part-block2-img-text {
+        padding: 0px 0px 10px 10px;
+    }
+    #four-part-blockimsges {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 360px;
+        height: 475px;
+        margin-top: 20px;
+    }
+    #four-part-block2 {
+        order: 2;
+    }
+    #four-part-block3 {
+        order: 3;
+    }
+    .four-part-block2-img-text {
+        width: 152px;
+        height: 190px;
+    }
+    .four-part-block2-img-text-icon {
+        font-size: 12px;
+    }
+    .four-part-sicretdiv-text {
+        width: 152px;
+        font-size: 8px;
+    }
+    .icon4-1-div, .icon4-1 {
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+    }
+    .icon4-1 {
+        top: 10px;
+        left: 10px;
+    }
+    #present-copmpany-images-div-text-link-block {
+        width: 96px;
+        height: 29px;
+        clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
+    }
+    .four-part-block1-div {
+        width: 45px;
+        height: 45px;
+    }
+    .four-part-block:hover .four-part-sicretdiv {
+        height: 100px;
     }
 }
