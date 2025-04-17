@@ -1500,7 +1500,7 @@ footer {
 
 @media (max-width: 390px) {
     #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3, #third-part-images, #vector4, #vector5,
-    #polygon, #vector2, #vector6 {
+    #polygon, #vector2, #vector6, #img-xmld_18, #big-robot, #div_back_robot {
         display: none;
     }
     #logotype {
@@ -1569,23 +1569,23 @@ footer {
         margin: 10px auto 0 auto;
 
     }
-    #second-part, #third-part, #four-part {
+    #second-part, #third-part, #four-part, #five-part {
         width: 360px;
         display: flex;
         margin: 30px auto 0 auto;
     }
-    #second-part-icon, #icon3, #four-part-icon {
+    #second-part-icon, #icon3, #four-part-icon, #five-part-icon {
         width: 26px;
         height: 26px;
         display: flex;
         margin: 0 auto 0 auto;
     }
-    #second-part-text-42px, #third-part-text42px, #four-part-text-42px {
+    #second-part-text-42px, #third-part-text42px, #four-part-text-42px, #five-part-text-42px {
         font-size: 16px;
         text-align: center;
         margin-top: 10px;
     }
-    #second-part-text-16px, #conteiner2-text16px, #four-part-text-16px {
+    #second-part-text-16px, #conteiner2-text16px, #four-part-text-16px, #five-part-text-16px {
         font-size: 8px;
     }
     #second-part-blockimsges {
@@ -1706,4 +1706,35 @@ footer {
     .four-part-block:hover .four-part-sicretdiv {
         height: 100px;
     }
+    #five-part-imagesblock {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #five-part-imagesblock-text-div2, #five-part-imagesblock-text2-div2 {
+        margin: 0;
+        width: auto;
+    }
+    .five-part-imagesblock-text-div-icon-r {
+        width: 60px;
+        height: 60px;
+    }
+    .five-part-imagesblock-text-div-icon {
+        width: 60px;
+        height: 60px;
+        order: -2;
+        margin-left: 0;
+    }
+    #five-part-imagesblock-text2 {
+        margin-top: 15px;
+    }
+    .five-part-imagesblock-text {
+        align-items: start;
+        width: auto;
+    }
+    .five-part-imagesblock-text-div p {
+        text-align: start;
+        margin-left: 20px;
+    }
 }
+
