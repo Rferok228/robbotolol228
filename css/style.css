@@ -415,8 +415,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #third-part-text {
-    width: 645px;
-    height: 685px;
+    max-width: 645px;
+    min-width: 360px;
 }
 
 #third-part-images-div {
@@ -466,7 +466,7 @@ body::-webkit-scrollbar-thumb {
 
 #third-part-link {
     display: flex;
-    width: 200px;
+    max-width: 200px;
     height: 63px;
     align-items: center;
     font-family: Orbitron;
@@ -1495,7 +1495,7 @@ footer {
 }
 
 @media (max-width: 390px) {
-    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3  {
+    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3, #third-part-images, #vector4  {
         display: none;
     }
     #logotype {
@@ -1544,31 +1544,41 @@ footer {
         width: 8px;
         height: 8px;
     }
-    #present-copmpany-block, #second-part-link-block {
-    width: 108px;
+    #present-copmpany-block, #second-part-link-block, #third-part-link-block {
+    width: 96px;
     height: 29px;
     background-color: rgba(138, 53, 242, 1);
     clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
     }
-    #present-copmpany-link-text, #second-part-link-text {
-        font-size: 8px;
+    #present-copmpany-block {
+        width: 108px;
     }
-    #present-copmpany-link, #second-part-link {
-        margin-top: 10px;
+    #present-copmpany-link-text, #second-part-link-text, #third-part-link-text {
+        font-size: 8px;
+
+    }
+    #present-copmpany-link, #second-part-link, #third-part-link{
         width: auto;
         padding: 0;
+        display: flex;
+        margin: 10px auto 0 auto;
+
     }
-    #second-part {
+    #second-part, #third-part {
         width: 360px;
         display: flex;
-        margin: 20px auto 0 auto;
+        margin: 30px auto 0 auto;
     }
-    #second-part-icon {
+    #second-part-icon, #icon3 {
         width: 26px;
         height: 26px;
+        display: flex;
+        margin: 0 auto 0 auto;
     }
-    #second-part-text-42px {
+    #second-part-text-42px, #third-part-text42px {
         font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
     }
     #second-part-text-16px {
         font-size: 8px;
@@ -1577,7 +1587,7 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         height: 260px;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     #second-part-block2, #second-part-block-images2 {
         order: -2;
@@ -1605,5 +1615,10 @@ footer {
         height: 60px;
         width: 60px;
     }
-    
+    .third-part-text {
+        text-align: justify;
+    }
+    #third-part-link {
+        width: 75px;
+    }
 }
