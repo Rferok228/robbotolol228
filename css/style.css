@@ -1495,7 +1495,7 @@ footer {
 }
 
 @media (max-width: 390px) {
-    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1  {
+    #rings, #contact-now , #navigation, #img-icon-search, #present-copmpany-images-div-text, #present-copmpany-text-s16, #decoration2, #vector1, #vector3  {
         display: none;
     }
     #logotype {
@@ -1544,17 +1544,19 @@ footer {
         width: 8px;
         height: 8px;
     }
-    #present-copmpany-block {
+    #present-copmpany-block, #second-part-link-block {
     width: 108px;
     height: 29px;
     background-color: rgba(138, 53, 242, 1);
     clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 100%, 0% 100%);
     }
-    #present-copmpany-link-text {
+    #present-copmpany-link-text, #second-part-link-text {
         font-size: 8px;
     }
-    #present-copmpany-link {
+    #present-copmpany-link, #second-part-link {
         margin-top: 10px;
+        width: auto;
+        padding: 0;
     }
     #second-part {
         width: 360px;
@@ -1580,7 +1582,7 @@ footer {
     #second-part-block2, #second-part-block-images2 {
         order: -2;
         width: 209px;
-        height: 258px;
+        height: 260px;
     }
     #second-part-block1, #second-part-block-images1 {
 
@@ -1603,4 +1605,5 @@ footer {
         height: 60px;
         width: 60px;
     }
+    
 }
